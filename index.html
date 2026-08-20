@@ -1,4 +1,10 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Broski Food</title>
+<meta name="description" content="Broski Food — burgers, smash burgers, tacos, sandwichs & wraps. Viande fraîche de boucherie, pain frais de boulangerie.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;700;800&family=Work+Sans:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
@@ -212,8 +218,11 @@
     font-style:normal;
     color:var(--orange);
     display:block;
-    -webkit-text-stroke:2px #FAF2E1;
-    text-stroke:2px #FAF2E1;
+    text-shadow:
+      -1px -1px 0 #FAF2E1, 1px -1px 0 #FAF2E1,
+      -1px 1px 0 #FAF2E1, 1px 1px 0 #FAF2E1,
+      -2px 0 0 #FAF2E1, 2px 0 0 #FAF2E1,
+      0 -2px 0 #FAF2E1, 0 2px 0 #FAF2E1;
   }
   .hero p.lede{
     margin-top:1.15rem;
@@ -526,6 +535,8 @@
   .to-top.show{opacity:1; pointer-events:auto; transform:translateY(0);}
 </style>
 
+</head>
+<body>
 <header class="nav">
   <div class="nav-inner">
     <a class="brand-mark" href="#top">
@@ -849,3 +860,5 @@
     cards.forEach(function(c){ c.classList.add('in-view'); });
   }
 </script>
+</body>
+</html>
